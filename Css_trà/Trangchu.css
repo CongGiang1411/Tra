@@ -1,0 +1,241 @@
+*{box-sizing: border-box;}
+#modau{
+    position: sticky;
+    top: 0;
+    background-color: rgba(214, 245, 214, 0.5);
+}
+#logophongtra{
+    display: block;
+    float: left;
+    width: 40%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#logophongtra img{
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+#luachon{
+float: left;
+width: 60%;
+}
+#luachon ul{list-style-type: none;}
+ul li{
+    display: inline-block;
+    padding:20px;}
+a{
+    text-decoration: none;
+    color: black;
+    text-align: center;}
+    li a:hover{
+        text-shadow: 1px 1px 2px rgba(129, 240, 126, 0.815),0 0 25px rgb(0, 255, 34),0 0 5px rgba(16, 204, 41, 0.349);
+    }
+#modau::after{
+    display: table;
+    clear: both;
+    content: " ";
+}
+#gioithieu {
+    background-image: url('../anh-trangchu/backBanner.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    animation: abc1 5s ease-in-out 3s 1 both ;
+    
+}
+ @keyframes abc1{
+    0%{margin-left: 1500px; width: 100%;}
+    100%{margin-left: 0px; width: 100%;}
+}
+#gioithieu .abc{
+    position: relative;
+    display:inline-block ;
+    margin-left: 200px;
+    padding: 80px 0px 80px 0px;
+    width: 38%;
+}
+.abc a{
+    display: inline-block;
+    background-color: greenyellow;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    padding: 20px ;
+}
+#gioithieus1{
+    background-image: url('../anh-trangchu/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:scroll;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    height: 460px;
+    animation: abc 5s ease-in-out 3s 1 both ;
+}
+ @keyframes abc{
+    0%{margin-left: 0px; width: 100%;}
+    100%{margin-left: -1500px; width: 100%;}
+}
+#gioithieus1 .abc{
+    position: relative;
+    display:block ;
+    padding-top: 90px;
+    margin-left: 60%;
+    width: 38%;
+    line-height: 0px;
+}    
+.abc a{
+    display: inline-block;
+    background-color: greenyellow;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    padding: 25px ;
+}
+.a:hover{
+    border:2px dotted black ;
+}
+#gioithieu1{
+    display: inline-block;
+    padding: 10px 0px 50px 0px;
+    margin-left:600px ;
+}
+
+h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+#sanpham .mini1{
+    display: block;
+    position: absolute;
+    float: left;
+    margin-left: 30px;
+    margin-top: 110px;
+}
+#sanpham .mini2{
+    margin-top: 110px;
+
+}
+ .sp{
+    padding: 30px;
+    display: block;
+    float: left;
+    width: 20%;
+    text-align: center;
+    overflow: auto;
+    margin-left:50px;
+}
+.sp img{
+    width: 100%;
+    transition: transform 2s;
+    border-radius: 100px;
+}
+.sp img:hover{
+    transform: rotate(180deg);
+}
+#sanpham::after{
+    display: table;
+    clear: both;
+    content: " ";
+}
+ .anhnen{
+ position: absolute;
+ z-index: -1;
+ display: block;
+ 
+}
+#gioithieusp h1{
+    padding-top: 100px;
+    font-size: 50px;
+}
+#gioithieusp1{
+    display: inline-block;
+    width: 50%;
+    margin-left: 160px;
+}
+
+
+#gioithieusp #n{
+    display: block;
+    width: 80%;
+}
+#gioithieusp1 a{
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+    text-decoration:none;
+    color: aliceblue;
+    background-color: green;
+}
+#nghenhan .nn{
+    display: block;
+    float: left;
+    width: 13%;
+    margin: 20px;
+    transition: width 0.1s;
+}
+#nghenhan .nn:hover{
+    width: 15%;
+
+}
+#nghenhan1{
+    display: block;
+    margin-left: 200px;
+}
+.nn img{
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+.nn p{
+    display: block;
+ 
+    text-align: center;
+    font-size: small;
+}
+#nghenhan h1{
+    margin-top: 120px;
+}
+#nghenhan1::after{
+    display: table;
+    clear: both;
+    content: " ";
+}
+#ban #nhap {
+margin-left:  350px;
+display: inline-block;
+padding: 10px;
+border: 2px solid rgb(13, 165, 13);
+width: 40%;
+}
+#ban button{
+    background-color: greenyellow;
+    padding: 10px;
+    border-color:greenyellow ;
+}
+#ban p{
+    margin-top: 60px;
+    text-align: center;
+    font-size: 20px;
+}
+#footer .anhnen{
+    display: block;
+    width: 100%;
+    height: 25%;
+}
+#footer .ket{
+    display: inline-block;
+    width: 25%;
+    font-size:smaller;
+    line-height: 10px;
+    margin-top: 20px;
+}
+
+
+
+
+

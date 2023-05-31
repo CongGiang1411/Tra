@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sanpham</title>
+    <link rel="stylesheet" href="../Css_trà/Sanpham.css">
+    <script language="javascript" src="../JS-Trà/sanpham.js"></script>
+</head>
+<body>
+    <header id="modau">
+        <div >
+        <div id="logophongtra">
+            <img src="../anh-trangchu/logophongtra.png" alt="logophongtra">
+        </div>
+        <div id="luachon">
+            <ul id="ulmodau">
+                <li><a href="../html_trà/index.html">TRANG CHỦ </a></li>
+                <li><a href="../html_trà/Gioithieu.html">GIỚI THIỆU</a></li>
+                <li><a href="../html_trà/Sanpham.html">SẢN PHẨM</a></li>
+                <li><a href="../html_trà/Tintuc.html">TIN TỨC</a></li>
+                <li><a href="../html_trà/Lienhe.html">LIÊN HỆ</a></li>
+            </ul>
+        </div></div>
+    </header
+    <section>
+        <div id="sanpham">
+            <img src="../anh-sanpham/banner.png" alt="" id="anhnen">
+            <p>SẢN PHẨM</p>
+        </div>
+        <div id="sanpham1">
+            <div id="trangchu1" style="font-size:small;"><p><a href="../html_trà/index.html">Trang chủ </a> > Sản phẩm</p></div>
+            <div id="trangchu2">Sản Phẩm</div>
+        </div>
+    <div id="muaban">
+    <fieldset id="fieldset">
+            <p style="font-size: small; opacity: 0.5;">Bộ lọc sản phẩm</p>
+            <form action=""method="multipart" id="luachonsp">
+                <p style="display: block; padding-top: 10px;"><b> Loại sản phẩm</b></p><br>
+                <input type="checkbox" id="txthainguyen"><label for="txthainguyen">Trà xanh Thái Nguyên</label><br>
+                <input type="checkbox" id="tolong"><label for="tolong">Trà Ô Long</label><br>
+                <input type="checkbox" id="tshentuyet"><label for="tshentuyet">Trà Shan tuyết</label><br>
+                <input type="checkbox" id="tbup"><label for="tsen">Trà Búp</label><br>
+                <input type="checkbox" id="tlai"><label for="tlai">Trà Lài</label><br>
+                <input type="checkbox" id="tthaoduoc"><label for="tthaoduoc">Trà Thảo Dược</label><br>
+                <input type="checkbox" id="dungcuphatra"><label for="dungcuphatra">Dụng cụ pha trà</label><br>
+                <input type="checkbox" id="nuocphatra" onclick="nuocphatra()"><label for="nuocphatra">Nước pha trà</label><br>
+            </form>
+            <form action="" oninput="x.value=parentInt(a.value)">
+                <p style="padding-top: 10px;"><b> Giá thành</b></p>
+                <input type="range" min="0" max="500000" alt="number" id="a"> 
+                <output name="x" for="a"></output>
+                <br>
+                <p style="opacity: 0.9; font-size: small;">Từ 0vnđ đến 500.000vnđ</p>
+            </form>
+            <form action="">
+                <p style="padding-top: 10px;"><b> Thương hiệu</b></p>
+                <input type="checkbox" id="ttcx"><label for="ttcx">Trà Tân Cương Xanh</label><br>
+                <input type="checkbox" id="tsth"><label for="tsth">Trà Sen Tây Hồ</label><br>
+                <input type="checkbox" id="tlt"><label for="tlt">Trà Lộc Tân</label><br>
+
+            </form>
+    </fieldset>
+    <div id="phansp">
+    <fieldset id="fieldset1" >
+        <div id="luachongiaca" >
+            <form action="">
+                <select name="luachongiaca1" id="">
+                    <option value="">Thứ tự mặc định</option>
+                    <option value="Giá thấp đến cao">Giá thấp đến cao</option>
+                    <option value="Giá cao đến thấp">Giá cao đến thấp</option>
+                    <option value="Xếp theo đánh giá">Xếp theo đánh giá</option>
+                    <option value="Xếp theo phổ biến">Xếp theo phổ biến</option>
+                </select>
+            </form>
+        </div>
+        <br>
+        <div class="sp">
+            <p class="NEW">NEW</p>
+            <img src="../anh-sanpham/img-4.png" alt="Trà Shen Tuyết">
+            <p class="tentra">Trà Shen Tuyết</p>
+            <div>
+                <p class="giatien"><b> 50.000 <span style="font-size: 10px;">VND</span></b></p>
+                <form action="" class="giatien">
+                    <select name="luongtra" id="">
+                        <option value="200g">200g</option>
+                        <option value="500g">500g</option>
+                        <option value="1kg">1kg</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+        <div class="sp">
+            <p class="NEW">NEW</p>
+            <img src="../anh-sanpham/img-5.png" alt="Trà Ô Long">
+            <p class="tentra">Trà Ô Long</p>
+            <div >
+                <p class="giatien"><b> 70.000 <span style="font-size: 10px;">VND</span></b></p>
+                <form action="" class="giatien">
+                    <select name="luongtra" id="">
+                        <option value="200g">200g</option>
+                        <option value="500g">500g</option>
+                        <option value="1kg">1kg</option>
+                    </select>
+                </form>
+            </div>
+    </div>
+    <div class="sp" >
+            <p class="NEW">NEW</p>
+            <img src="../anh-sanpham/img-6.png" alt="Trà Búp">
+            <p class="tentra">Trà Búp</p>
+            <div >
+                <p class="giatien"> <b> 70.000 <span style="font-size: 10px;">VND</span> </b></p>
+                <form action="" class="giatien">
+                    <select name="luongtra" id="">
+                        <option value="200g">200g</option>
+                        <option value="500g">500g</option>
+                        <option value="1kg">1kg</option>
+                    </select>
+                </form>
+            </div>
+    </div>
+    <div class="sp" >
+        <p class="NEW">NEW</p>
+        <img src="../anh-sanpham/img-7.png" alt="Trà Thái Nguyên">
+        <p class="tentra">Trà Thái Nguyên</p>
+        <div >
+            <p class="giatien"> <b> 80.000 <span style="font-size: 10px;">VND</span> </b></p>
+            <form action="" class="giatien">
+                <select name="luongtra" id="">
+                    <option value="200g">200g</option>
+                    <option value="500g">500g</option>
+                    <option value="1kg">1kg</option>
+                </select>
+            </form>
+        </div>
+</div>
+<div class="sp" >
+    <p class="NEW" style="background-color: aquamarine;">OLD</p>
+    <img src="../anh-sanpham/img-8.png" alt="Trà Lài">
+    <p class="tentra">Trà Lài</p>
+    <div >
+        <p class="giatien"> <b> 50.000 <span style="font-size: 10px;">VND</span> </b></p>
+        <form action="" class="giatien">
+            <select name="luongtra" id="">
+                <option value="200g">200g</option>
+                <option value="500g">500g</option>
+                <option value="1kg">1kg</option>
+            </select>
+        </form>
+    </div>
+</div>
+<div class="sp" >
+    <p class="NEW" style="background-color: aquamarine;">OLD</p>
+    <img src="../anh-sanpham/img-9.jpg" alt="Trà Thảo Mộc">
+    <p class="tentra">Trà Thảo Mộc</p>
+    <div >
+        <p class="giatien"> <b> 80.000 <span style="font-size: 10px;">VND</span> </b></p>
+        <form action="" class="giatien">
+            <select name="luongtra" id="">
+                <option value="200g">200g</option>
+                <option value="500g">500g</option>
+                <option value="1kg">1kg</option>
+            </select>
+        </form>
+    </div>
+</div>
+    </fieldset>
+    <fieldset id="fieldset2">
+        <div id="luachongiaca" >
+            <form action="">
+                <select name="luachongiaca1" id="">
+                    <option value="">Thứ tự mặc định</option>
+                    <option value="Giá thấp đến cao">Giá thấp đến cao</option>
+                    <option value="Giá cao đến thấp">Giá cao đến thấp</option>
+                    <option value="Xếp theo đánh giá">Xếp theo đánh giá</option>
+                    <option value="Xếp theo phổ biến">Xếp theo phổ biến</option>
+                </select>
+            </form>
+        </div>
+        <br>
+        <div class="sp" >
+            <p class="NEW" style="background-color: aquamarine;">OLD</p>
+            <img src="../anh-sanpham/img-10.jpg" alt="Dụng cụ pha trà">
+            <p class="tentra">Dụng cụ pha Trà</p>
+            <div >
+                <p class="giatien"> <b> 200.000 <span style="font-size: 10px;">VND</span> </b></p>
+                <form action="" class="giatien">
+                    <select name="luongtra" id="">
+                        <option value="loai1">xịn</option>
+                        <option value="loai2">rep 1:1</option>
+                        <option value="loai3">chợ</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+        <div class="sp" id="spphatra">
+            <p class="NEW" style="background-color: aquamarine;">OLD</p>
+            <img src="../anh-sanpham/img-11.jpg" alt="Nước pha trà">
+            <p class="tentra">Nước pha Trà</p>
+            <div >
+                <p class="giatien"> <b> 800.000 <span style="font-size: 10px;">VND</span> </b></p>
+                <form action="" class="giatien">
+                    <select name="luongtra" id="">
+                        <option value="200g">200ml</option>
+                        <option value="500g">500ml</option>
+                        <option value="1kg">1l</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+    </fieldset></div>
+</div>
+    <div id="mucluc" >
+        <button onclick="back()"> &lt </button>
+        <button onclick="trang1()"> 1</button>
+        <button onclick="trang2()"> 2</button>
+        <button onclick="nuocphatra()"> 3</button>
+        <button onclick="trang4"> 4</button>
+        <button > &gt</button>
+    </div>
+    <br>
+    </section>
+    <footer>
+        <div id="footer">
+            <img src="../anh-trangchu/fotter.png" alt="" class="anhnen" >
+            <div class="ket" style="margin-left: 260px;">
+                <img src="../anh-trangchu/logophongtra.png" alt="">
+                <p>098.1107.169</p>
+                <p>giangtapboi@gmail.com</p>
+                <p>Số 96,New York,Việt Nam</p>
+            </div >
+            <div class="ket" >
+                <p style="padding-bottom:5% ;">VỀ CHÚNG TÔI</p>
+                <p >Giới thiệu</p>
+                <p>Sản Phẩm</p>   
+                <p>Tin tức</p>    
+            </div>
+            <div class="ket">
+                <p>heheheehe</p>
+                
+            </div>
+        </div>
+    </footer>
+    
+
+    
+</body>
+</html>

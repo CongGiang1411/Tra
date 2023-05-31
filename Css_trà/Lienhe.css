@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+}
+header{
+    position: sticky;
+    background-color: rgba(214, 245, 214, 0.5);
+    top:0px;
+}
+#logophongtra{
+    display: block;
+    float: left;
+    width: 40%;
+}
+#logophongtra img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+#luachon{
+    display: block;
+    float: left;
+}
+#ulluachon li{
+    display: block;
+    float: left;
+    padding: 20px;
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+li a:hover{
+    text-shadow: 1px 1px 2px rgba(129, 240, 126, 0.815),0 0 25px rgb(0, 255, 34),0 0 5px rgba(16, 204, 41, 0.349);
+}
+header::after{
+    display: table;
+    clear: both;
+    content: " ";
+}
+section {
+    background-image: url('../anh-lienhe/banner.jpg');
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-size: 100%;
+    height: 700px;
+}
+#ttin{
+    display: block;
+    width: 30%;
+    margin-left: 55%;
+    margin-top: 100px;
+}
+#ttin p{
+    font-family:'Courier New', Courier, monospace;
+    font-size: larger;
+}
+#ttin form{
+    display: block;
+}
+#ttinnhap input{
+    display: block;
+    width: 100%;
+    float: left;
+    border: 2px solid green;
+    margin: 10px 0px;
+    padding: 10px;
+}
+#ttinnhap button{
+    display: block;
+    padding: 10px 20px;
+    background-color: greenyellow;
+    border: none;
+}
+section::after{
+    display:table;
+    clear: both;
+    content: " ";
+}
+#footer .anhnen{
+    display: block;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+#footer .ket{
+    display: block;
+    float: left;
+    width: 25%;
+    font-size: smaller;
+    margin-left: 10px;
+}
